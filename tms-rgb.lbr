@@ -759,13 +759,13 @@
 <package name="PADS">
 <text x="-1.397" y="1.27" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-13.081" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<smd name="1" x="0" y="-0.00003125" dx="3.556" dy="1.778" layer="1" roundness="80"/>
-<smd name="2" x="0" y="-2.226759375" dx="3.556" dy="1.778" layer="1" roundness="80"/>
-<smd name="3" x="0" y="-4.4534875" dx="3.556" dy="1.778" layer="1" roundness="80"/>
-<smd name="4" x="0" y="-6.680215625" dx="3.556" dy="1.778" layer="1" roundness="80"/>
-<smd name="5" x="0" y="-8.90694375" dx="3.556" dy="1.778" layer="1" roundness="80"/>
-<smd name="6" x="0" y="-11.133671875" dx="3.556" dy="1.778" layer="1" roundness="80"/>
-<smd name="7" x="-8.001" y="-0.127" dx="3.81" dy="1.778" layer="1" roundness="80"/>
+<smd name="1" x="0" y="-0.00003125" dx="3.556" dy="1.778" layer="1" roundness="80" cream="no"/>
+<smd name="2" x="0" y="-2.226759375" dx="3.556" dy="1.778" layer="1" roundness="80" cream="no"/>
+<smd name="3" x="0" y="-4.4534875" dx="3.556" dy="1.778" layer="1" roundness="80" cream="no"/>
+<smd name="4" x="0" y="-6.680215625" dx="3.556" dy="1.778" layer="1" roundness="80" cream="no"/>
+<smd name="5" x="0" y="-8.90694375" dx="3.556" dy="1.778" layer="1" roundness="80" cream="no"/>
+<smd name="6" x="0" y="-11.133671875" dx="3.556" dy="1.778" layer="1" roundness="80" cream="no"/>
+<smd name="7" x="-8.001" y="-0.127" dx="3.81" dy="1.778" layer="1" roundness="80" cream="no"/>
 </package>
 </packages>
 <symbols>

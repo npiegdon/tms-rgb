@@ -1,5 +1,8 @@
 # Ignore list for Eagle, a PCB layout tool
 
+# OSHPark upload logs
+oshpark_ulp.log
+
 # Backup files
 *.s#?
 *.b#?
