@@ -1798,21 +1798,21 @@ Contact:</text>
 <wire x1="33.02" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="MX_R" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="X"/>
 <pinref part="U3" gate="A" pin="A+"/>
 <wire x1="66.04" y1="121.92" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="MX_B" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="Z"/>
 <pinref part="U3" gate="A" pin="B+"/>
 <wire x1="66.04" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="MX_Y" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="Y"/>
 <pinref part="U3" gate="A" pin="C+"/>
@@ -1997,7 +1997,7 @@ Contact:</text>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SC_R" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
@@ -2008,7 +2008,7 @@ Contact:</text>
 <pinref part="C9" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="SC_B" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
@@ -2019,7 +2019,7 @@ Contact:</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="SC_Y" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
@@ -2259,7 +2259,7 @@ Contact:</text>
 <wire x1="55.88" y1="66.04" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="HOLD" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="D+"/>
 <wire x1="91.44" y1="76.2" x2="74.422" y2="76.2" width="0.1524" layer="91"/>
