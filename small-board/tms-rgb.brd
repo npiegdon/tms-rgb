@@ -713,8 +713,6 @@ https://nicholas.piegdon.info/tms-rgb</text>
 <hole x="0" y="-15.24" drill="0.8128"/>
 <hole x="0" y="-17.78" drill="0.8128"/>
 <hole x="0" y="-20.32" drill="0.8128"/>
-<hole x="0" y="0" drill="0.8128"/>
-<hole x="0" y="-45.72" drill="0.8128"/>
 <hole x="0" y="-43.18" drill="0.8128"/>
 <hole x="0" y="-33.02" drill="0.8128"/>
 <hole x="0" y="-35.56" drill="0.8128"/>
@@ -733,10 +731,12 @@ https://nicholas.piegdon.info/tms-rgb</text>
 <hole x="15.24" y="-27.94" drill="0.8128"/>
 <hole x="15.24" y="-30.48" drill="0.8128"/>
 <hole x="15.24" y="-38.1" drill="0.8128"/>
-<hole x="15.24" y="-45.72" drill="0.8128"/>
 <hole x="15.24" y="-43.18" drill="0.8128"/>
 <hole x="15.24" y="-40.64" drill="0.8128"/>
 <hole x="15.24" y="-48.26" drill="0.8128"/>
+<pad name="1" x="0" y="-45.72" drill="0.8128" diameter="1.524"/>
+<pad name="2" x="15.24" y="-45.72" drill="0.8128" diameter="1.524"/>
+<pad name="3" x="0" y="0" drill="0.8128" diameter="1.524" shape="square"/>
 </package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
