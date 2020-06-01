@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -143,17 +143,22 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTM5NWVh" projecturn="a.cGVyc29uYWw6dWUyOTM5NWVhIzIwMjAwNTIyMzAwNzcwMjgx" f3durn="urn:adsk.wipprod:dm.lineage:Eoig_706SxaljRjBe3G10Q" pcbguid="9ad01170-f437-4134-90db-be3f16b55f56" lastpulledtime="" lastsyncedchangeguid="fe5fbdbc-5461-7b9f-5e33-021b47c94a00"/>
 <plain>
-<wire x1="0" y1="28.692" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="91.237" y2="0" width="0" layer="20"/>
-<wire x1="91.237" y1="0" x2="91.237" y2="28.692" width="0" layer="20"/>
-<wire x1="91.237" y1="28.692" x2="0" y2="28.692" width="0" layer="20"/>
+<wire x1="89.078" y1="3.058" x2="89.078" y2="26.67" width="0" layer="20"/>
+<wire x1="89.078" y1="26.67" x2="86.538" y2="29.21" width="0" layer="20" curve="90"/>
+<wire x1="86.538" y1="29.21" x2="6.35" y2="29.21" width="0" layer="20"/>
+<wire x1="6.35" y1="29.21" x2="3.81" y2="26.67" width="0" layer="20" curve="90"/>
+<wire x1="3.81" y1="26.67" x2="3.81" y2="3.058" width="0" layer="20"/>
+<wire x1="3.81" y1="3.058" x2="6.35" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="6.35" y1="0" x2="86.538" y2="0" width="0" layer="20"/>
+<wire x1="86.538" y1="0" x2="89.078" y2="3.058" width="0" layer="20" curve="90"/>
 <text x="48.768" y="20.066" size="1.016" layer="26" rot="MR0" align="top-left">TMS-RGB Jig
 2020
-v1
+v2
 
 @npiegdon</text>
-<text x="70.104" y="10.16" size="2.54" layer="22" rot="MR180">*</text>
+<text x="70.104" y="8.89" size="2.54" layer="22" rot="MR180">*</text>
 <hole x="15.24" y="3.81" drill="3.5"/>
 <hole x="15.24" y="25.4" drill="3.5"/>
 <hole x="80.01" y="3.81" drill="3.5"/>
@@ -287,7 +292,7 @@ v1
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="POGO">
-<pad name="1" x="0" y="0" drill="1.1176" diameter="1.9304" rot="R90"/>
+<pad name="1" x="0" y="0" drill="1.143" diameter="1.9304" rot="R90"/>
 <text x="-1.27" y="-2.794" size="1.27" layer="21" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
@@ -510,49 +515,51 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="J2" library="tms-rgb-jig" package="1X07" package3d_urn="urn:adsk.eagle:package:38129/1" value="" x="7.493" y="22.479" smashed="yes" rot="R270">
+<element name="J2" library="tms-rgb-jig" package="1X07" package3d_urn="urn:adsk.eagle:package:38129/1" value="CONN_07" x="7.493" y="22.479" smashed="yes" rot="R270">
 <attribute name="VALUE" x="5.461" y="23.749" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="J3" library="tms-rgb-jig" package="1X05" package3d_urn="urn:adsk.eagle:package:38104/1" value="" x="85.979" y="20.32" smashed="yes" rot="R270">
+<element name="J3" library="tms-rgb-jig" package="1X05" package3d_urn="urn:adsk.eagle:package:38104/1" value="CONN_05" x="85.979" y="20.32" smashed="yes" rot="R270">
 <attribute name="VALUE" x="83.947" y="21.59" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J4" library="tms-rgb-jig" package="POGO" value="R-Y" x="67.564" y="22.225" smashed="yes" rot="R180">
-<attribute name="VALUE" x="90.424" y="19.939" size="1.016" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="VALUE" x="88.138" y="20.32" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
 <element name="J5" library="tms-rgb-jig" package="POGO" value="B-Y" x="59.944" y="22.225" smashed="yes" rot="R180">
-<attribute name="VALUE" x="90.424" y="14.859" size="1.016" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="VALUE" x="88.138" y="15.24" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
 <element name="J6" library="tms-rgb-jig" package="POGO" value="Y" x="62.484" y="22.225" smashed="yes" rot="R180">
-<attribute name="VALUE" x="90.424" y="17.145" size="1.016" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="VALUE" x="88.138" y="17.78" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
 <element name="J7" library="tms-rgb-jig" package="POGO" value="VCC" x="54.864" y="22.225" smashed="yes" rot="R180">
-<attribute name="VALUE" x="90.424" y="12.192" size="1.016" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="VALUE" x="88.138" y="12.7" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
 <element name="J8" library="tms-rgb-jig" package="POGO" value="GND" x="44.704" y="6.985" smashed="yes" rot="R180">
-<attribute name="VALUE" x="90.424" y="9.779" size="1.016" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="VALUE" x="88.138" y="10.16" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J9" library="tms-rgb-jig" package="POGO" value="VCC" x="23.622" y="9.017" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="6.731" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J9" library="tms-rgb-jig" package="POGO" value="VCC" x="24.9682" y="9.01703125" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="7.23903125" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J10" library="tms-rgb-jig" package="POGO" value="R" x="23.622" y="11.2522" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="9.3472" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J10" library="tms-rgb-jig" package="POGO" value="R" x="24.9682" y="11.243759375" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="9.770559375" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J11" library="tms-rgb-jig" package="POGO" value="G" x="23.622" y="13.4874" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="11.7094" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J11" library="tms-rgb-jig" package="POGO" value="G" x="24.9682" y="13.4704875" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="12.3020875" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J12" library="tms-rgb-jig" package="POGO" value="B" x="23.622" y="15.7226" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="14.3256" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J12" library="tms-rgb-jig" package="POGO" value="B" x="24.9682" y="15.697215625" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="14.833615625" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J13" library="tms-rgb-jig" package="POGO" value="S_75" x="23.622" y="17.9578" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="16.8148" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J13" library="tms-rgb-jig" package="POGO" value="S75" x="24.9682" y="17.92394375" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="17.36514375" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J14" library="tms-rgb-jig" package="POGO" value="GND" x="23.622" y="20.193" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="19.431" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J14" library="tms-rgb-jig" package="POGO" value="GND" x="24.9682" y="20.150671875" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="19.896671875" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
-<element name="J15" library="tms-rgb-jig" package="POGO" value="S_TTL" x="30.861" y="9.144" smashed="yes" rot="R180">
-<attribute name="VALUE" x="5.461" y="21.971" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
+<element name="J15" library="tms-rgb-jig" package="POGO" value="TTL" x="33.7312" y="9.398" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="22.479" size="0.6096" layer="22" font="vector" rot="MR90" align="center"/>
 </element>
 <element name="J16" library="tms-rgb-jig" package="POGO" value="PIN1" x="72.644" y="6.985" smashed="yes" rot="R180"/>
+<element name="J17" library="tms-rgb-jig" package="POGO" value="PIN18" x="29.464" y="6.985" smashed="yes"/>
+<element name="J18" library="tms-rgb-jig" package="POGO" value="PIN23" x="29.464" y="22.225" smashed="yes"/>
 </elements>
 <signals>
 <signal name="+5V">
@@ -562,80 +569,84 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$1">
 <contactref element="J3" pad="1"/>
 <contactref element="J4" pad="1"/>
-<wire x1="85.979" y1="20.32" x2="69.469" y2="20.32" width="0.8128" layer="16"/>
-<wire x1="69.469" y1="20.32" x2="67.564" y2="22.225" width="0.8128" layer="16"/>
+<wire x1="85.979" y1="20.32" x2="69.469" y2="20.32" width="1.2192" layer="16"/>
+<wire x1="69.469" y1="20.32" x2="67.564" y2="22.225" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="J3" pad="4"/>
 <contactref element="J7" pad="1"/>
-<wire x1="85.979" y1="12.7" x2="64.389" y2="12.7" width="0.8128" layer="16"/>
-<wire x1="64.389" y1="12.7" x2="54.864" y2="22.225" width="0.8128" layer="16"/>
+<wire x1="85.979" y1="12.7" x2="62.484" y2="12.7" width="1.2192" layer="16"/>
+<wire x1="62.484" y1="12.7" x2="54.864" y2="20.32" width="1.2192" layer="16"/>
+<wire x1="54.864" y1="20.32" x2="54.864" y2="22.225" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="J3" pad="5"/>
 <contactref element="J8" pad="1"/>
-<wire x1="85.979" y1="10.16" x2="47.879" y2="10.16" width="0.8128" layer="16"/>
-<wire x1="47.879" y1="10.16" x2="44.704" y2="6.985" width="0.8128" layer="16"/>
+<wire x1="47.879" y1="10.16" x2="44.704" y2="6.985" width="1.2192" layer="16"/>
+<wire x1="85.979" y1="10.16" x2="47.879" y2="10.16" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="J6" pad="1"/>
 <contactref element="J3" pad="2"/>
-<wire x1="85.979" y1="17.78" x2="66.929" y2="17.78" width="0.8128" layer="16"/>
-<wire x1="66.929" y1="17.78" x2="62.484" y2="22.225" width="0.8128" layer="16"/>
+<wire x1="85.979" y1="17.78" x2="64.897" y2="17.78" width="1.2192" layer="16"/>
+<wire x1="64.897" y1="17.78" x2="62.484" y2="20.193" width="1.2192" layer="16"/>
+<wire x1="62.484" y1="20.193" x2="62.484" y2="22.225" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="J3" pad="3"/>
 <contactref element="J5" pad="1"/>
-<wire x1="85.979" y1="15.24" x2="66.929" y2="15.24" width="0.8128" layer="16"/>
-<wire x1="66.929" y1="15.24" x2="59.944" y2="22.225" width="0.8128" layer="16"/>
+<wire x1="85.979" y1="15.24" x2="64.135" y2="15.24" width="1.2192" layer="16"/>
+<wire x1="64.135" y1="15.24" x2="59.944" y2="19.431" width="1.2192" layer="16"/>
+<wire x1="59.944" y1="19.431" x2="59.944" y2="22.225" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$6">
 <contactref element="J2" pad="7"/>
 <contactref element="J9" pad="1"/>
-<wire x1="7.493" y1="7.239" x2="21.844" y2="7.239" width="0.8128" layer="16"/>
-<wire x1="21.844" y1="7.239" x2="23.622" y2="9.017" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="7.239" x2="20.828" y2="7.239" width="1.2192" layer="16"/>
+<wire x1="22.60603125" y1="9.01703125" x2="24.9682" y2="9.01703125" width="1.2192" layer="16"/>
+<wire x1="20.828" y1="7.239" x2="22.60603125" y2="9.01703125" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="J2" pad="6"/>
 <contactref element="J10" pad="1"/>
-<wire x1="23.622" y1="11.2522" x2="19.5072" y2="11.2522" width="0.8128" layer="16"/>
-<wire x1="18.034" y1="9.779" x2="7.493" y2="9.779" width="0.8128" layer="16"/>
-<wire x1="19.5072" y1="11.2522" x2="18.034" y2="9.779" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="9.779" x2="19.685" y2="9.779" width="1.2192" layer="16"/>
+<wire x1="21.149759375" y1="11.243759375" x2="24.9682" y2="11.243759375" width="1.2192" layer="16"/>
+<wire x1="19.685" y1="9.779" x2="21.149759375" y2="11.243759375" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="J2" pad="5"/>
 <contactref element="J11" pad="1"/>
-<wire x1="23.622" y1="13.4874" x2="16.6624" y2="13.4874" width="0.8128" layer="16"/>
-<wire x1="15.494" y1="12.319" x2="7.493" y2="12.319" width="0.8128" layer="16"/>
-<wire x1="16.6624" y1="13.4874" x2="15.494" y2="12.319" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="12.319" x2="18.415" y2="12.319" width="1.2192" layer="16"/>
+<wire x1="19.5664875" y1="13.4704875" x2="24.9682" y2="13.4704875" width="1.2192" layer="16"/>
+<wire x1="18.415" y1="12.319" x2="19.5664875" y2="13.4704875" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="J2" pad="4"/>
 <contactref element="J12" pad="1"/>
-<wire x1="14.2748" y1="14.859" x2="7.493" y2="14.859" width="0.8128" layer="16"/>
-<wire x1="23.622" y1="15.7226" x2="15.1384" y2="15.7226" width="0.8128" layer="16"/>
-<wire x1="15.1384" y1="15.7226" x2="14.2748" y2="14.859" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="14.859" x2="17.526" y2="14.859" width="1.2192" layer="16"/>
+<wire x1="18.364215625" y1="15.697215625" x2="24.9682" y2="15.697215625" width="1.2192" layer="16"/>
+<wire x1="17.526" y1="14.859" x2="18.364215625" y2="15.697215625" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="J2" pad="3"/>
 <contactref element="J13" pad="1"/>
-<wire x1="7.493" y1="17.399" x2="11.811" y2="17.399" width="0.8128" layer="16"/>
-<wire x1="12.3698" y1="17.9578" x2="23.622" y2="17.9578" width="0.8128" layer="16"/>
-<wire x1="11.811" y1="17.399" x2="12.3698" y2="17.9578" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="17.399" x2="16.51" y2="17.399" width="1.2192" layer="16"/>
+<wire x1="17.03494375" y1="17.92394375" x2="24.9682" y2="17.92394375" width="1.2192" layer="16"/>
+<wire x1="16.51" y1="17.399" x2="17.03494375" y2="17.92394375" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="J2" pad="2"/>
 <contactref element="J14" pad="1"/>
-<wire x1="23.622" y1="20.193" x2="10.668" y2="20.193" width="0.8128" layer="16"/>
-<wire x1="10.414" y1="19.939" x2="7.493" y2="19.939" width="0.8128" layer="16"/>
-<wire x1="10.668" y1="20.193" x2="10.414" y2="19.939" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="19.939" x2="15.367" y2="19.939" width="1.2192" layer="16"/>
+<wire x1="15.578671875" y1="20.150671875" x2="24.9682" y2="20.150671875" width="1.2192" layer="16"/>
+<wire x1="15.367" y1="19.939" x2="15.578671875" y2="20.150671875" width="1.2192" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="J2" pad="1"/>
 <contactref element="J15" pad="1"/>
-<wire x1="7.493" y1="22.479" x2="25.4" y2="22.479" width="0.8128" layer="16"/>
-<wire x1="30.861" y1="17.018" x2="30.861" y2="9.144" width="0.8128" layer="16"/>
-<wire x1="25.4" y1="22.479" x2="30.861" y2="17.018" width="0.8128" layer="16"/>
+<wire x1="7.493" y1="22.479" x2="26.035" y2="22.479" width="1.2192" layer="16"/>
+<wire x1="33.7312" y1="14.7828" x2="33.7312" y2="9.398" width="1.2192" layer="16"/>
+<wire x1="26.035" y1="22.479" x2="33.7312" y2="14.7828" width="1.2192" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -651,6 +662,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

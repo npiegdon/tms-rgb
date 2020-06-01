@@ -271,7 +271,7 @@
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="POGO">
-<pad name="1" x="0" y="0" drill="1.1176" diameter="1.9304" rot="R90"/>
+<pad name="1" x="0" y="0" drill="1.143" diameter="1.9304" rot="R90"/>
 <text x="-1.27" y="-2.794" size="1.27" layer="21" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
@@ -359,7 +359,7 @@ CONN_05
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONN_07" prefix="J" uservalue="yes">
+<deviceset name="CONN_07" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONN_07" x="-2.54" y="0"/>
 </gates>
@@ -383,7 +383,7 @@ CONN_05
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONN_05" prefix="J" uservalue="yes">
+<deviceset name="CONN_05" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONN_05" x="-2.54" y="0"/>
 </gates>
@@ -406,6 +406,7 @@ CONN_05
 </devices>
 </deviceset>
 <deviceset name="CONN_POGO" prefix="J" uservalue="yes">
+<description>For P75-series spring-loaded pins</description>
 <gates>
 <gate name="G$1" symbol="CONN_POGO" x="5.08" y="2.54"/>
 </gates>
@@ -443,17 +444,19 @@ CONN_05
 <part name="J10" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="R"/>
 <part name="J11" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="G"/>
 <part name="J12" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="B"/>
-<part name="J13" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="S_75"/>
+<part name="J13" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="S75"/>
 <part name="J14" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="GND"/>
-<part name="J15" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="S_TTL"/>
+<part name="J15" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="TTL"/>
 <part name="J16" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="PIN1"/>
+<part name="J17" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="PIN18"/>
+<part name="J18" library="tms-rgb-jig" deviceset="CONN_POGO" device="" value="PIN23"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="165.1" y="33.02" size="2.54" layer="97" align="top-left">Nicholas Piegdon
-May 17, 2020
-v1
+June 1, 2020
+v2
 
 CERN-OHL-W v2
 github.com/npiegdon/tms-rgb
@@ -471,69 +474,61 @@ Contact:</text>
 <wire x1="142.24" y1="0" x2="213.36" y2="0" width="0.508" layer="97"/>
 <wire x1="213.36" y1="0" x2="213.36" y2="52.07" width="0.508" layer="97"/>
 <wire x1="213.36" y1="52.07" x2="142.24" y2="52.07" width="0.508" layer="97"/>
-<text x="177.8" y="38.1" size="2.54" layer="97" align="bottom-center">Test jig PCB for TMS-RGB v1</text>
+<text x="177.8" y="38.1" size="2.54" layer="97" align="bottom-center">Test jig PCB for TMS-RGB v2</text>
 <text x="177.546" y="42.672" size="5.08" layer="97" align="bottom-center">TMS-RGB Jig</text>
+<text x="2.54" y="2.54" size="2.54" layer="97">Use P75-D3 or P75-E3 pins</text>
 </plain>
 <instances>
 <instance part="J2" gate="G$1" x="78.74" y="40.64" smashed="yes">
-<attribute name="VALUE" x="73.66" y="30.734" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="73.66" y="53.848" size="1.778" layer="95" font="vector"/>
+<attribute name="NAME" x="73.66" y="54.102" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J3" gate="G$1" x="43.18" y="43.18" smashed="yes" rot="R180">
-<attribute name="VALUE" x="45.72" y="53.086" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="42.164" y="53.34" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="NAME" x="39.37" y="51.562" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J4" gate="G$1" x="7.62" y="76.2" smashed="yes">
 <attribute name="VALUE" x="7.62" y="69.85" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="7.62" y="75.438" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J5" gate="G$1" x="7.62" y="45.72" smashed="yes">
 <attribute name="VALUE" x="7.62" y="39.37" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="7.62" y="44.958" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J6" gate="G$1" x="7.62" y="60.96" smashed="yes">
 <attribute name="VALUE" x="7.62" y="54.61" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="7.62" y="60.198" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J7" gate="G$1" x="7.62" y="33.02" smashed="yes">
 <attribute name="VALUE" x="7.62" y="26.67" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="7.62" y="32.258" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J8" gate="G$1" x="7.62" y="22.86" smashed="yes">
 <attribute name="VALUE" x="7.62" y="16.51" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="7.62" y="22.098" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J9" gate="G$1" x="104.14" y="73.66" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="80.01" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="74.422" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J10" gate="G$1" x="104.14" y="63.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="69.85" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="64.262" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J11" gate="G$1" x="104.14" y="55.88" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="62.23" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="56.642" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J12" gate="G$1" x="104.14" y="45.72" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="52.07" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="46.482" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J13" gate="G$1" x="104.14" y="35.56" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="41.91" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="36.322" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J14" gate="G$1" x="104.14" y="25.4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="31.75" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="26.162" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J15" gate="G$1" x="104.14" y="7.62" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="13.97" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="104.14" y="8.382" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J16" gate="G$1" x="7.62" y="93.98" smashed="yes">
-<attribute name="VALUE" x="7.62" y="87.63" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="7.62" y="93.218" size="1.778" layer="95" font="vector"/>
+<instance part="J16" gate="G$1" x="144.78" y="78.74" smashed="yes">
+<attribute name="VALUE" x="144.78" y="72.39" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="J17" gate="G$1" x="162.56" y="78.74" smashed="yes">
+<attribute name="VALUE" x="162.56" y="72.39" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="J18" gate="G$1" x="180.34" y="78.74" smashed="yes">
+<attribute name="VALUE" x="180.34" y="72.39" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -646,6 +641,11 @@ Contact:</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,154.94,76.2,J16,5,,,,"/>
+<approved hash="101,1,172.72,76.2,J17,5,,,,"/>
+<approved hash="101,1,190.5,76.2,J18,5,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
