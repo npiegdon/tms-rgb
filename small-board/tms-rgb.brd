@@ -1049,22 +1049,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="R8" library="tms-rgb" package="R0603" value="10K" x="33.147" y="6.731" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.9314375" y="6.2992" size="0.8128" layer="25"/>
 </element>
-<element name="R4" library="tms-rgb" package="R0603" value="220" x="19.177" y="6.334125" smashed="yes">
+<element name="R4" library="tms-rgb" package="R0603" value="910" x="19.177" y="6.334125" smashed="yes">
 <attribute name="NAME" x="19.177" y="5.1435" size="0.6096" layer="25" align="bottom-center"/>
 </element>
 <element name="R3" library="tms-rgb" package="R0603" value="680" x="19.177" y="8.09625" smashed="yes">
 <attribute name="NAME" x="19.177" y="6.9088" size="0.6096" layer="25" align="bottom-center"/>
 </element>
-<element name="R5" library="tms-rgb" package="R0603" value="27" x="19.177" y="4.572" smashed="yes">
+<element name="R5" library="tms-rgb" package="R0603" value="160" x="19.177" y="4.572" smashed="yes">
 <attribute name="NAME" x="19.177" y="3.3782" size="0.6096" layer="25" align="bottom-center"/>
 </element>
-<element name="R6" library="tms-rgb" package="R0603" value="150" x="22.821" y="13.080996875" smashed="yes" rot="R180">
+<element name="R6" library="tms-rgb" package="R0603" value="620" x="22.821" y="13.080996875" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.2598" y="12.612" size="0.6096" layer="25" rot="R90"/>
 </element>
 <element name="R2" library="tms-rgb" package="R0603" value="910" x="19.177" y="9.858375" smashed="yes">
 <attribute name="NAME" x="19.177" y="8.683625" size="0.6096" layer="25" align="bottom-center"/>
 </element>
-<element name="R7" library="tms-rgb" package="R0603" value="150" x="22.821" y="4.3942" smashed="yes" rot="R180">
+<element name="R7" library="tms-rgb" package="R0603" value="910" x="22.821" y="4.3942" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.2598" y="3.976" size="0.6096" layer="25" rot="R90"/>
 </element>
 <element name="R9" library="tms-rgb" package="R0603" value="5K6" x="37.465" y="13.169" smashed="yes" rot="R270">

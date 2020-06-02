@@ -1479,12 +1479,12 @@
 <part name="SUPPLY7" library="tms-rgb" deviceset="5V" device=""/>
 <part name="SUPPLY8" library="tms-rgb" deviceset="5V" device=""/>
 <part name="R8" library="tms-rgb" deviceset="R" device="0603" value="10K"/>
-<part name="R4" library="tms-rgb" deviceset="R" device="0603" value="220"/>
+<part name="R4" library="tms-rgb" deviceset="R" device="0603" value="910"/>
 <part name="R3" library="tms-rgb" deviceset="R" device="0603" value="680"/>
-<part name="R5" library="tms-rgb" deviceset="R" device="0603" value="27"/>
-<part name="R6" library="tms-rgb" deviceset="R" device="0603" value="150"/>
+<part name="R5" library="tms-rgb" deviceset="R" device="0603" value="160"/>
+<part name="R6" library="tms-rgb" deviceset="R" device="0603" value="620"/>
 <part name="R2" library="tms-rgb" deviceset="R" device="0603" value="910"/>
-<part name="R7" library="tms-rgb" deviceset="R" device="0603" value="150"/>
+<part name="R7" library="tms-rgb" deviceset="R" device="0603" value="910"/>
 <part name="GND9" library="tms-rgb" deviceset="GND" device=""/>
 <part name="GND10" library="tms-rgb" deviceset="GND" device=""/>
 <part name="GND11" library="tms-rgb" deviceset="GND" device=""/>
@@ -1525,7 +1525,7 @@
 <sheet>
 <plain>
 <text x="236.22" y="33.02" size="2.54" layer="97" align="top-left">Nicholas Piegdon
-May 31, 2020
+June 2, 2020
 v2
 
 CERN-OHL-W v2
@@ -1550,6 +1550,9 @@ Contact:</text>
 &lt;100ppm/°C</text>
 <text x="2.54" y="2.54" size="1.778" layer="97">All resistors should be (at least) 1% tolerance.</text>
 <text x="42.418" y="96.012" size="1.016" layer="97">for Y propagation matching</text>
+<text x="126.238" y="120.142" size="1.016" layer="97">ideally 0.406x</text>
+<text x="126.238" y="104.902" size="1.016" layer="97">ideally 0.573x</text>
+<text x="126.238" y="89.662" size="1.016" layer="97">0.85x</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="40.64" y="127" smashed="yes">
@@ -1581,7 +1584,7 @@ Contact:</text>
 <attribute name="VALUE" x="243.84" y="128.27" size="1.6764" layer="96" ratio="6" rot="SR0" align="bottom-right"/>
 </instance>
 <instance part="U100" gate="A" x="5.08" y="127" smashed="yes">
-<attribute name="NAME" x="5.08" y="130.81" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="5.08" y="130.81" size="2.0828" layer="95" ratio="6" rot="SR0" display="off"/>
 <attribute name="VALUE" x="5.08" y="128.27" size="1.6764" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="GND1" gate="G$1" x="22.86" y="71.12" smashed="yes"/>
@@ -1725,11 +1728,11 @@ Contact:</text>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="147.32" y="15.24" smashed="yes"/>
 <instance part="GND14" gate="G$1" x="74.422" y="66.04" smashed="yes"/>
-<instance part="FID1" gate="G$1" x="195.58" y="10.16" smashed="yes">
-<attribute name="NAME" x="195.58" y="5.08" size="1.778" layer="95" align="bottom-center"/>
+<instance part="FID1" gate="G$1" x="198.12" y="7.62" smashed="yes">
+<attribute name="NAME" x="198.12" y="2.54" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="FID2" gate="G$1" x="203.2" y="10.16" smashed="yes">
-<attribute name="NAME" x="203.2" y="5.08" size="1.778" layer="95" align="bottom-center"/>
+<instance part="FID2" gate="G$1" x="205.74" y="7.62" smashed="yes">
+<attribute name="NAME" x="205.74" y="2.54" size="1.778" layer="95" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
