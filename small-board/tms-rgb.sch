@@ -1525,19 +1525,19 @@
 <sheet>
 <plain>
 <text x="236.22" y="33.02" size="2.54" layer="97" align="top-left">Nicholas Piegdon
-June 2, 2020
+June 13, 2020
 v2
 
-CERN-OHL-W v2
 github.com/npiegdon/tms-rgb
-nicholas.piegdon.info/tms-rgb
+CERN-OHL-W v2
+tms-rgb.com
 @npiegdon</text>
 <text x="215.9" y="33.02" size="2.54" layer="97" align="top-left">Design:
 Modified:
 Version:
 
-License:
 Repository:
+License:
 Instructions:
 Contact:</text>
 <wire x1="213.36" y1="52.07" x2="213.36" y2="0" width="0.508" layer="97"/>
